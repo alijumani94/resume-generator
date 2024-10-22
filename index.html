@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="submit" id="form">
+        <h2 id="heading">Resume Form</h2>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+            <br>
+            <label for="address">Current Address:</label>
+            <input type="text" id="address" placeholder="Enter your current address">
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+            <fieldset>
+                <legend>Matriculation</legend>
+                <label for="mschool">School/Institute:</label>
+                <input type="text" id="mschool" placeholder="Enter your school name">
+                <label for="mgrade">Grade:</label>
+                <input type="text" id="mgrade" placeholder="Enter your grade or percentage">
+                <label for="mgroup">Group:</label>
+                <input type="text" id="mgroup" placeholder="Enter your group">
+            </fieldset>
+            <fieldset>
+                <legend>Intermediate</legend>
+                <label for="ischool">School/Institute:</label>
+                <input type="text" id="ischool" placeholder="Enter your school name">
+                <label for="igrade">Grade:</label>
+                <input type="text" id="igrade" placeholder="Enter your grade or percentage">
+                <label for="igroup">Group:</label>
+                <input type="text" id="igroup" placeholder="Enter your group">
+            </fieldset>
+            <fieldset>
+                <legend>Graduation</legend>
+                <label for="uni-name">University Name:</label>
+                <input type="text" id="uni-name" placeholder="Enter university name">
+                <label for="uni-program">Programe:</label>
+                <input type="text" id="uni-program" placeholder="Program in which you have done your graduation.">
+                <label for="uni-cgpa">CGPA:</label>
+                <input type="number" id="uni-cgpa" placeholder="Enter your CGPA">
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Work experience</legend>
+            <label for="exp-company">Company:</label>
+            <input type="text" id="exp-company" placeholder="Enter the company you worked in">
+            <label for="exp-time">Years of work:</label>
+            <input type="number" id="exp-time" placeholder="Enter number of years you worked in company">
+            <label for="exp-designation">Designation:</label>
+            <input type="text" id="exp-designation" placeholder="Enter designation">
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" placeholder="Enter your skills by entering comma(,)">
+        </fieldset>
+        <button type="submit">Generate Resume</button>
+        <br>
+
+        <div id="generate-resume">
+
+        </div>
+        <script src="app.js"></script>
+    </form>
+</body>
+</html>
